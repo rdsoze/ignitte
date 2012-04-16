@@ -6,8 +6,8 @@
 # Example:
 #
 # set :output, "/path/to/my/cron_log.log"
-set :cron_log, "/log/cron_log.log"
-set :environment, 'development'
+set :environment, "development"
+set :output, "#{ENV['PWD']}/log/whenever.log"
 # every 2.hours do
 #   command "/usr/bin/some_great_command"
 #   runner "MyModel.some_method"
