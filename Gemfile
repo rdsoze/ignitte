@@ -7,7 +7,7 @@ gem 'rails', '3.1.1'
 
 gem 'pg'
 gem 'twitter'
-
+gem 'whenever'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
