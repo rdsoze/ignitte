@@ -4,8 +4,8 @@ class User < ActiveRecord::Base
 
   class << self
 
-    def populate
-      @tweets = Tweet.get_tweets 50
+    def populate(count)
+      @tweets = Tweet.get_tweets count
       @tweets.each do |tweet|
         user = User.get_user tweet 
         Tweet.add_tweet(user,tweet)

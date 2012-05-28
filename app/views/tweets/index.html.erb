@@ -4,3 +4,7 @@
 	<%= user.name %> <br>
 	<%= user.count %> <br>
 <% end %>
+
+<% @tweets.each do |t| %>
+	<%= raw(t.html) %> <br>
+<% end %>
